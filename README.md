@@ -64,7 +64,7 @@ A gene that activates itself can achieve two different steady states. If two sig
 
 #### Oscillator
 
-Having a loop of three repressors achieves an oscillator.
+Having a loop of three repressors such that X represses Y, Y represses Z and Z represses X leads to an oscillator.
 
 <img src = "GeneNetworks/Oscillator/clock.png">
 
