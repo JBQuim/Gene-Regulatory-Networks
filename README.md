@@ -42,4 +42,29 @@ If Y is not a strong a repressor as before, instead of a pulse, Z settles into a
 
 #### Coherent Feedforward Loop
 
-If instead Y is 
+If instead Y is an activator of Z, the fall of the concentration of Z is delayed when the signal is stopped. This means drops in signal can be filtered out.
+
+<img src = "GeneNetworks/PosFFL/PosFFL.png">
+
+#### SIM
+
+A single input module (SIM) is a regulatory motif whereby a single gene activates many others. This is desirable in the cell to localize computation to a single gene which then activates others to change the cell's intracellular environment in response. Moreover, it would be preferable if the genes could be expressed in a temporally ordered manner. By making X activate Z1, Z2 and Z3 with increasing thresholds, a last in first out (LIFO) scheme is achieved.
+
+<img src = "GeneNetworks/SIM/LIFO.png">
+
+If a first in first out (FIFO) scheme is preferred instead another gene regulated by X, Y, must be added. By having Y activate Z1, Z2 and Z3 with thresholds in the reverse order of activation by X, FIFO is achieved.
+
+<img src = "GeneNetworks/SIM/FIFO.png">
+
+#### Positive feedback loop
+
+A gene that activates itself can achieve two different steady states. If two signals Sx and Sy can activate or repress X expression further, then when the signal is stopped the system will settle to the steady state that is closest. This achieves a system with memory of the identity of the last pulse it received.
+
+<img src = "GeneNetworks/Switch/OneNode.png">
+
+#### Oscillator
+
+Having a loop of three repressors achieves an oscillator.
+
+<img src = "GeneNetworks/Oscillator/Clock.png">
+
