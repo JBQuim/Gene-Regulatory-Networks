@@ -68,3 +68,6 @@ Having a loop of three repressors such that X represses Y, Y represses Z and Z r
 
 <img src = "GeneNetworks/Oscillator/clock.png">
 
+Damped oscillations are achieved if X represses Y and Y activates X. If some noise is added these oscillations no longer become damped.
+
+<img src = "GeneNetworks/Oscillator/clockNoise.png">
