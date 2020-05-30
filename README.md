@@ -28,7 +28,7 @@ Here if Y is bound, `beta` is 0 so that term need not be taken into account. It 
 
 ## Examples
 
-Here are some of the behaviours that gene regulatory networks can exhibit and how they are implemented. `config.py` files and gene network files are found in [GeneNetworks](https://github.com/JBQuim/Gene-Regulatory-Networks/tree/master/GeneNetworks).
+Here are some of the behaviours that gene regulatory networks can exhibit and how they are implemented. `config.py` files and gene network files are found in [GeneNetworks](https://github.com/JBQuim/Gene-Regulatory-Networks/tree/master/GeneNetworks). For more gene network motifs and explanation of their design see Uri Alon's book "An Introduction to Systems Biology".
 
 #### Incoherent feedforward Loop
 
@@ -129,4 +129,8 @@ These are json files that hold the structure of the whole gene network. It is a 
 - `betas` - this is a list of the value of beta for every combination in `operatorStates`. All non-specified combinations in `operatorStates` are taken to have beta of 0.
 
 Setting up a gene network can be quite involved at the beginning. Taking a look at the examples to understand the process fully can be useful.
+
+## Improvements
+
+Gene regulatory networks are very visual constructs and so it is a shame that this is lost by abstraction into json files. In the future, adding a GUI would really benefit the usability. 
 
